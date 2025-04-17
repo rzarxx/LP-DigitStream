@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami - DigitStream</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .icon {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-indigo-100 text-gray-900 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-white shadow-md p-4 mb-8 flex items-center justify-between rounded-lg relative">
+    <span class="text-xl font-bold text-blue-700">DigitStream</span>
+
+    <!-- Hamburger Menu -->
+    <div class="relative">
+      <button onclick="toggleDropdown()" class="text-blue-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+        <a href="index.html" class="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-700">Beranda</a>
+        <a href="./tutor.html" class="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-700">Tutorial</a>
+        <a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm text-gray-700">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tentang Kami -->
+  <section class="max-w-5xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
+    <h1 class="text-3xl font-bold text-blue-700 mb-4">Tentang Kami</h1>
+    <p class="text-gray-700 mb-6">
+      DigitStream adalah penyedia layanan sewa platform live streaming RTMP (Real-Time Messaging Protocol) yang cepat, stabil, dan mudah digunakan. Kami mendukung kebutuhan streaming Anda 24 jam nonstop (24/7) dengan server khusus berkecepatan tinggi yang dirancang untuk kualitas siaran profesional.    </p>
+
+    <h2 class="text-2xl font-semibold text-blue-600 mb-2">Misi Kami</h2>
+    <p class="text-gray-700 mb-2">- Menyediakan layanan sewa server streaming RTMP yang cepat, aman, dan mudah digunakan</p>
+    <p class="text-gray-700 mb-2">- Mendukung siaran live 24/7 tanpa downtime</p>
+    <p class="text-gray-700 mb-2">- Memberikan dukungan teknis yang humanis dan responsif</p>
+    <p class="text-gray-700 mb-2">- Terus mengembangkan fitur yang relevan dengan kebutuhan pasar digital</p>
+    <p class="text-gray-700 mb-2">-Mendorong kemajuan ekosistem konten digital dan live production di Indonesia
+
+    </p>
+
+    <h2 class="text-2xl font-semibold text-blue-600 mb-2">Tim Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+<!-- Card 1 -->
+<div class="bg-blue-50 p-4 rounded-xl shadow hover:shadow-lg transition text-center">
+  <img src="https://img.icons8.com/color/96/user-male-circle--v1.png" class="w-16 h-16 mb-2 mx-auto" />
+  <h3 class="text-lg font-bold text-blue-700 inline-flex items-center justify-center gap-1">
+    Reza Kusuma
+    <img src="https://img.icons8.com/color/20/verified-badge.png" alt="Verified" class="w-4 h-4" title="Verified Account"/>
+  </h3>  <p class="text-sm text-gray-600 mb-2">Founder & Developer</p>
+  <button onclick="window.open('https://www.instagram.com/rza.rxx', '_blank')" class="inline-flex items-center gap-2 text-sm text-pink-600 hover:text-pink-700">
+    <img src="https://img.icons8.com/fluency/24/instagram-new.png" class="w-5 h-5" />
+    Instagram
+  </button>
+</div>
+
+
+<!-- Card 2 -->
+<div class="bg-blue-50 p-4 rounded-xl shadow hover:shadow-lg transition text-center">
+  <img src="https://img.icons8.com/color/96/user-male-circle--v1.png" class="w-16 h-16 mb-2 mx-auto" />
+  <h3 class="text-lg font-bold text-blue-700 inline-flex items-center justify-center gap-1">
+    M. Dimas
+    <img src="https://img.icons8.com/color/20/verified-badge.png" alt="Verified" class="w-4 h-4" title="Verified Account"/>
+  </h3>
+    <p class="text-sm text-gray-600 mb-2">Marketing</p>
+  <button onclick="window.open('https://www.instagram.com/dimas_azmi31', '_blank')" class="inline-flex items-center gap-2 text-sm text-pink-600 hover:text-pink-700">
+    <img src="https://img.icons8.com/fluency/24/instagram-new.png" class="w-5 h-5" />
+    Instagram
+  </button>
+</div>
+
+
+      <!-- Card 3 -->
+      <div class="bg-blue-50 p-4 rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://img.icons8.com/color/96/user-group-man-man--v1.png" class="w-16 h-16 mb-2" />
+        <h3 class="text-lg font-bold text-blue-700">Tim Kontributor</h3>
+        <p class="text-sm text-gray-600">Konten & Dokumentasi</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-600 mt-12 mb-6 text-sm">
+    &copy; 2025 DigitStream. Semua hak dilindungi.
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.classList.toggle("hidden");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("dropdownMenu");
+      const button = e.target.closest("button");
+
+      if (!dropdown.contains(e.target) && !button) {
+        dropdown.classList.add("hidden");
+      }
+    });
+  </script>
+</body>
+</html>
